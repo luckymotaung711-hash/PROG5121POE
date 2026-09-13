@@ -83,5 +83,6 @@ if (registrationMessage.equals("Registration successful.")) {
         }
 
         input.close();
+        
     }
 }
