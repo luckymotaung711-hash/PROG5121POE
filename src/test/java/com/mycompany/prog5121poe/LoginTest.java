@@ -135,5 +135,6 @@ public class LoginTest {
         );
 
         assertFalse(user.loginUser());
+        assertFalse(user.loginUser());
     }
 }
