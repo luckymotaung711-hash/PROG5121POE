@@ -53,15 +53,18 @@ public class QuickChat {
         System.out.println("\n" + registrationMessage);
 
         // Continue only if registration was successful
-        if (registrationMessage.equals("Registration successful.")) {
+if (registrationMessage.equals("Registration successful.")) {
 
-            System.out.println("\n--- LOGIN ---");
+    System.out.println("Username successfully captured.");
+    System.out.println("Password successfully captured.");
+    System.out.println("Cell phone number successfully added.");
 
-            System.out.print("Enter username: ");
-            String loginUsername = input.nextLine();
+    System.out.println("\n--- LOGIN ---");
+    System.out.print("Enter username: ");
+    String loginUsername = input.nextLine();
 
-            System.out.print("Enter password: ");
-            String loginPassword = input.nextLine();
+    System.out.print("Enter password: ");
+    String loginPassword = input.nextLine();
 
             // Store the login details
             user.setLoginDetails(loginUsername, loginPassword);
