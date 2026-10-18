@@ -17,7 +17,7 @@ public class LoginTest {
         Login user = new Login(
                 "kyl_1",
                 "Ch&&sec@ke99!",
-                "+27838968976",
+                "cccc",
                 "Kyle",
                 "Smith"
         );
