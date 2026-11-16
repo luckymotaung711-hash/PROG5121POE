@@ -28,6 +28,15 @@ public class Message {
         this.messageNumber = messageNumber;
         this.messageHash = createMessageHash();
     }
+    // Constructor used when loading an existing message from JSON
+public Message(String messageID, String recipient,
+               String message, String messageHash, int messageNumber) {
+    this.messageID = messageID;
+    this.recipient = recipient;
+    this.message = message;
+    this.messageHash = messageHash;
+    this.messageNumber = messageNumber;
+}
 
     // Generate a random 10-digit message ID
     private String generateMessageID() {
@@ -200,3 +209,4 @@ private String escapeJson(String value) {
             .replace("\t", "\\t");
 }
 }
+  
